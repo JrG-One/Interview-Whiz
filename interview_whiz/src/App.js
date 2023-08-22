@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './index.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container" id="root">
+      <div className="content-container">
+        {/* Content of the content container */}
+        <div className="interview-header">
+          InterviewWhiz<span className="interview-dot">.</span>
+        </div>
+        <div className="coach-container">
+          <div className="coach-text">
+          Interview Practice, Reinvented<br/>
+          Your Personal Interview Coach
+          </div>
+          <div className="coach-options">
+            <button className="instant-interview-button">Instant Interview</button>
+            <button className="schedule-interview-button">Schedule an Interview</button>
+          </div>
+        </div>
+      </div>
+      <div className="illustration-container">
+        <img src="https://file.rendit.io/n/piq2u02YWZRVqnfKUfa3.png" className="img" id="illustration" />
+      </div>
     </div>
   );
 }
