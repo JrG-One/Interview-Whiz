@@ -1,13 +1,184 @@
-body {
+/* Reset some default styles */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Common styles */
+.container {
+  display: flex;
+  width: 100%;
+  padding-top: 6rem;
+  /* overflow-x: auto; Enable horizontal scrolling */
 }
+
+.content-container {
+  flex: 1;
+  /* padding: 2rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #c9e1ed;
+  padding-left: 15px;
+  
+  
+}
+
+.illustration-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start; /* Align the image to the start */
+  align-items: center;
+  /* padding: 2rem; */
+  /* overflow: hidden; Hide image overflow */
+  /* padding-top: 2rem; */
+}
+
+.img {
+  max-width: 100%;
+  /* height: auto; */
+  height: 1000px;
+}
+
+/* Navigation styles */
+.nav-container {
+  width: 3297px;
+  height: 56px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 6px;
+  padding-left: 16px;
+  padding-right: 40px;
+}
+
+/* Logo styles */
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 8px;
+  width: 308px;
+  position: relative;
+}
+
+.logo-background {
+  width: 308px;
+  height: 145px;
+  background-color: #d9d9d9;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.logo-text {
+  font-size: 6rem;
+  font-weight: bold;
+  line-height: 60px;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Navigation links styles */
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  width: 714px;
+}
+
+.nav-link {
+  font-size: 6rem;
+  font-weight: bold;
+  line-height: 60px;
+  font-family: 'Inter', sans-serif;
+  color: #525252;
+}
+
+/* InterviewWhiz header styles */
+.interview-header {
+  font-size: 120px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  color: #242424;
+  position: relative;
+  padding-left: 3rem;
+  padding-top: 1rem;
+  /* margin-top: 5%; */
+}
+
+.interview-dot {
+  color: #2ba6fc;
+}
+
+/* Coach container styles */
+.coach-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+  
+}
+
+.coach-text {
+  font-size: 40px;
+  font-weight: medium;
+  font-family: 'Inter', sans-serif;
+  color: #525252;
+  margin-left: 1rem;
+  /* margin-bottom: 4rem; */
+  margin-top: 3%;
+}
+
+.coach-options {
+  display: flex;
+  flex-direction: row; /* Change to column layout for buttons */
+  gap: 2rem;
+  margin-left: 1rem;
+  margin-top: 15%;
+}
+
+.instant-interview-button{
+  font-size: 1.5rem; /* Adjust font size */
+  font-weight: medium;
+  /* line-height: 40px; Adjust line height */
+  font-family: 'Inter', sans-serif;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 180%;
+  border-radius: 35px; /* Smaller radius for buttons */
+  background-color: #2ba6fc;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.schedule-interview-button {
+  font-size: 1.5rem; /* Adjust font size */
+  font-weight: medium;
+  /* line-height: 40px; Adjust line height */
+  font-family: 'Inter', sans-serif;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 200%;
+  border-radius: 40px; /* Smaller radius for buttons */
+  background-color: #2ba6fc;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+.instant-interview-button:hover,
+.schedule-interview-button:hover {
+  background-color: #2087d1; /* Change color on hover */
+}
+/* Additional styles go here */
